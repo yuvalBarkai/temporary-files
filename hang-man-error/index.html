@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang Man</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hang Man Game</h1>
+    <div id="guessesLeft"></div>
+    <div id="blanks">
+        <span id="first"></span>
+        <span id="second"></span>
+        <span id="third"></span>
+        <span id="fourth"></span>
+        <span id="fifth"></span>
+        <span id="sixth"></span>
+        <span id="seventh"></span>
+        <span id="eight"></span>
+        <span id="ninth"></span>
+        <span id="tenth"></span>
+    </div>
+
+    <canvas id="canvas" width="300" height="300">
+    </canvas> <br>
+    <div id="wordsFromUser">Used words: <span id="usedWords"></span></div>
+    
+    <input type="text" id="letterGuess" placeholder="Letter" maxlength="1">
+    <input type="text" id="wordGuess" placeholder="Word Guess"> <br>
+    <div id="errorMsg"></div>
+    <button class="btn btn-dark" id="button" onclick="submit()">Submit</button>
+    <br>
+    <button class="btn btn-dark" onclick="newGame()">New Game</button>
+    <script src="script.js"></script>
+</body>
+</html>
